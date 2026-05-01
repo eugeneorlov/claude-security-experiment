@@ -1,0 +1,3244 @@
+{
+  "summary": {
+    "total_runs": 8,
+    "unique_findings_across_all_runs": 204,
+    "findings_in_all_runs": 0,
+    "findings_in_50pct_plus": 2,
+    "findings_in_under_50pct": 17,
+    "findings_in_exactly_1_run": 185,
+    "findings_with_severity_drift": 4,
+    "min_findings_per_run": 18,
+    "max_findings_per_run": 38,
+    "avg_findings_per_run": 29.1
+  },
+  "consistency_buckets": {
+    "always_detected": [],
+    "frequently_detected": [
+      {
+        "key": "routes/search.ts::A03:2021-Injection::sql injection in product search",
+        "title": "SQL Injection in Product Search",
+        "file": "routes/search.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 5,
+        "appearance_rate": "5/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "lib/insecurity.ts::A02:2021-Cryptographic Failures::md5 used for password hashing",
+        "title": "MD5 Used for Password Hashing",
+        "file": "lib/insecurity.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 5,
+        "appearance_rate": "5/8",
+        "severities_seen": [
+          "critical",
+          "high"
+        ],
+        "severity_drift": true,
+        "confidences_seen": [
+          "high"
+        ]
+      }
+    ],
+    "sporadically_detected": [
+      {
+        "key": "routes/userProfile.ts::A03:2021-Injection::remote code execution via eval() in user profile",
+        "title": "Remote Code Execution via eval() in User Profile",
+        "file": "routes/userProfile.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 3,
+        "appearance_rate": "3/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "lib/insecurity.ts::A02:2021-Cryptographic Failures::hardcoded hmac secret",
+        "title": "Hardcoded HMAC Secret",
+        "file": "lib/insecurity.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 3,
+        "appearance_rate": "3/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/fileUpload.ts::A08:2021-Software and Data Integrity Failures::unsafe yaml deserialization",
+        "title": "Unsafe YAML Deserialization",
+        "file": "routes/fileUpload.ts",
+        "category": "A08:2021-Software and Data Integrity Failures",
+        "appearances": 3,
+        "appearance_rate": "3/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/showProductReviews.ts::A03:2021-Injection::nosql injection via $where in product reviews",
+        "title": "NoSQL Injection via $where in Product Reviews",
+        "file": "routes/showProductReviews.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 3,
+        "appearance_rate": "3/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/login.ts::A03:2021-Injection::sql injection in login route",
+        "title": "SQL Injection in Login Route",
+        "file": "routes/login.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 2,
+        "appearance_rate": "2/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "lib/insecurity.ts::A02:2021-Cryptographic Failures::hardcoded rsa private key in source code",
+        "title": "Hardcoded RSA Private Key in Source Code",
+        "file": "lib/insecurity.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 2,
+        "appearance_rate": "2/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/dataExport.ts::A01:2021-Broken Access Control::idor in data export endpoint",
+        "title": "IDOR in Data Export Endpoint",
+        "file": "routes/dataExport.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 2,
+        "appearance_rate": "2/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/login.ts::A03:2021-Injection::sql injection in login endpoint",
+        "title": "SQL Injection in Login Endpoint",
+        "file": "target-repo/routes/login.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 2,
+        "appearance_rate": "2/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/search.ts::A03:2021-Injection::sql injection in product search",
+        "title": "SQL Injection in Product Search",
+        "file": "target-repo/routes/search.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 2,
+        "appearance_rate": "2/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/showProductReviews.ts::A03:2021-Injection::nosql injection via $where in product reviews",
+        "title": "NoSQL Injection via $where in Product Reviews",
+        "file": "target-repo/routes/showProductReviews.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 2,
+        "appearance_rate": "2/8",
+        "severities_seen": [
+          "critical",
+          "high"
+        ],
+        "severity_drift": true,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/trackOrder.ts::A03:2021-Injection::nosql injection via $where in order tracking",
+        "title": "NoSQL Injection via $where in Order Tracking",
+        "file": "target-repo/routes/trackOrder.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 2,
+        "appearance_rate": "2/8",
+        "severities_seen": [
+          "critical",
+          "high"
+        ],
+        "severity_drift": true,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/userProfile.ts::A03:2021-Injection::remote code execution via eval() on username",
+        "title": "Remote Code Execution via eval() on Username",
+        "file": "target-repo/routes/userProfile.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 2,
+        "appearance_rate": "2/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/lib/insecurity.ts::A01:2021-Broken Access Control::open redirect via substring-based allowlist bypass",
+        "title": "Open Redirect via Substring-Based Allowlist Bypass",
+        "file": "target-repo/lib/insecurity.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 2,
+        "appearance_rate": "2/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/logfileServer.ts::A01:2021-Broken Access Control::path traversal in log file server",
+        "title": "Path Traversal in Log File Server",
+        "file": "routes/logfileServer.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 2,
+        "appearance_rate": "2/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high",
+          "medium"
+        ]
+      },
+      {
+        "key": "lib/insecurity.ts::A02:2021-Cryptographic Failures::hardcoded hmac secret key",
+        "title": "Hardcoded HMAC Secret Key",
+        "file": "lib/insecurity.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 2,
+        "appearance_rate": "2/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "package.json::A06:2021-Vulnerable and Outdated Components::outdated express-jwt with known vulnerabilities",
+        "title": "Outdated express-jwt with Known Vulnerabilities",
+        "file": "package.json",
+        "category": "A06:2021-Vulnerable and Outdated Components",
+        "appearances": 2,
+        "appearance_rate": "2/8",
+        "severities_seen": [
+          "medium",
+          "high"
+        ],
+        "severity_drift": true,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "package.json::A06:2021-Vulnerable and Outdated Components::outdated sanitize-html with bypass vulnerabilities",
+        "title": "Outdated sanitize-html with Bypass Vulnerabilities",
+        "file": "package.json",
+        "category": "A06:2021-Vulnerable and Outdated Components",
+        "appearances": 2,
+        "appearance_rate": "2/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      }
+    ],
+    "detected_once_only": [
+      {
+        "key": "target-repo/routes/verify.ts::A01:2021-Broken Access Control::admin role self-assignment during registration",
+        "title": "Admin Role Self-Assignment During Registration",
+        "file": "target-repo/routes/verify.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/verify.ts::A02:2021-Cryptographic Failures::algorithm confusion attack: hs256 used to forge rsa token",
+        "title": "Algorithm Confusion Attack: HS256 Used to Forge RSA Token",
+        "file": "target-repo/routes/verify.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/memory.ts::A01:2021-Broken Access Control::all user memories returned without access control",
+        "title": "All User Memories Returned Without Access Control",
+        "file": "routes/memory.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "package.json::A06:2021-Vulnerable and Outdated Components::ancient jsonwebtoken library with algorithm confusion vulnerability",
+        "title": "Ancient jsonwebtoken Library with Algorithm Confusion Vulnerability",
+        "file": "package.json",
+        "category": "A06:2021-Vulnerable and Outdated Components",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/server.ts::A05:2021-Security Misconfiguration::application log files publicly accessible",
+        "title": "Application Log Files Publicly Accessible",
+        "file": "target-repo/server.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/basketItems.ts::A01:2021-Broken Access Control::bola: basket access without ownership verification",
+        "title": "BOLA: Basket Access Without Ownership Verification",
+        "file": "routes/basketItems.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/payment.ts::A01:2021-Broken Access Control::bola: payment methods accessed via user-controlled userid",
+        "title": "BOLA: Payment Methods Accessed via User-Controlled UserId",
+        "file": "routes/payment.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "server.ts::A01:2021-Broken Access Control::broken ip-based access control (invalid cidr range)",
+        "title": "Broken IP-Based Access Control (Invalid CIDR Range)",
+        "file": "server.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/lib/insecurity.ts::A02:2021-Cryptographic Failures::broken password hashing using md5",
+        "title": "Broken Password Hashing Using MD5",
+        "file": "target-repo/lib/insecurity.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/imageCaptcha.ts::A07:2021-Identification and Authentication Failures::captcha bypass via missing entry logic",
+        "title": "CAPTCHA Bypass via Missing Entry Logic",
+        "file": "routes/imageCaptcha.ts",
+        "category": "A07:2021-Identification and Authentication Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/userProfile.ts::A03:2021-Injection::csp injection via profile image url reflected in header",
+        "title": "CSP Injection via Profile Image URL Reflected in Header",
+        "file": "target-repo/routes/userProfile.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "routes/captcha.ts::A03:2021-Injection::code injection via eval() in captcha route",
+        "title": "Code Injection via eval() in Captcha Route",
+        "file": "routes/captcha.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "routes/userProfile.ts::A05:2021-Security Misconfiguration::content security policy allows unsafe-eval",
+        "title": "Content Security Policy Allows unsafe-eval",
+        "file": "routes/userProfile.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "server.ts::A02:2021-Cryptographic Failures::cookies missing secure and httponly flags",
+        "title": "Cookies Missing Secure and HttpOnly Flags",
+        "file": "server.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "target-repo/package.json::A06:2021-Vulnerable and Outdated Components::critically outdated jwt libraries",
+        "title": "Critically Outdated JWT Libraries",
+        "file": "target-repo/package.json",
+        "category": "A06:2021-Vulnerable and Outdated Components",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/package.json::A06:2021-Vulnerable and Outdated Components::critically outdated express-jwt (v0.1.3)",
+        "title": "Critically Outdated express-jwt (v0.1.3)",
+        "file": "target-repo/package.json",
+        "category": "A06:2021-Vulnerable and Outdated Components",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/package.json::A06:2021-Vulnerable and Outdated Components::critically outdated jsonwebtoken (0.4.0)",
+        "title": "Critically Outdated jsonwebtoken (0.4.0)",
+        "file": "target-repo/package.json",
+        "category": "A06:2021-Vulnerable and Outdated Components",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/package.json::A06:2021-Vulnerable and Outdated Components::critically outdated jsonwebtoken (v0.4.0)",
+        "title": "Critically Outdated jsonwebtoken (v0.4.0)",
+        "file": "target-repo/package.json",
+        "category": "A06:2021-Vulnerable and Outdated Components",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/userProfile.ts::A03:2021-Injection::dom xss via username in pug template with unsafe-eval csp",
+        "title": "DOM XSS via Username in Pug Template with unsafe-eval CSP",
+        "file": "routes/userProfile.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/frontend/src/hacking-instructor/index.ts::A03:2021-Injection::dom-based xss via innerhtml in hacking instructor",
+        "title": "DOM-Based XSS via innerHTML in Hacking Instructor",
+        "file": "target-repo/frontend/src/hacking-instructor/index.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "server.ts::A01:2021-Broken Access Control::directory listing enabled for /ftp and /support/logs",
+        "title": "Directory Listing Enabled for /ftp and /support/logs",
+        "file": "server.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "server.ts::A05:2021-Security Misconfiguration::directory listing enabled on /ftp endpoint",
+        "title": "Directory Listing Enabled on /ftp Endpoint",
+        "file": "server.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/server.ts::A05:2021-Security Misconfiguration::directory listing enabled on sensitive directories",
+        "title": "Directory Listing Enabled on Sensitive Directories",
+        "file": "target-repo/server.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "server.ts::A05:2021-Security Misconfiguration::encryption keys directory exposed with directory listing",
+        "title": "Encryption Keys Directory Exposed with Directory Listing",
+        "file": "server.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "server.ts::A01:2021-Broken Access Control::encryption keys directory publicly browsable",
+        "title": "Encryption Keys Directory Publicly Browsable",
+        "file": "server.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "package.json::A06:2021-Vulnerable and Outdated Components::extremely outdated jsonwebtoken library (v0.4.0)",
+        "title": "Extremely Outdated jsonwebtoken Library (v0.4.0)",
+        "file": "package.json",
+        "category": "A06:2021-Vulnerable and Outdated Components",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "server.ts::A05:2021-Security Misconfiguration::ftp directory exposed with directory listing",
+        "title": "FTP Directory Exposed with Directory Listing",
+        "file": "server.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/server.ts::A05:2021-Security Misconfiguration::ftp directory listing publicly exposed",
+        "title": "FTP Directory Listing Publicly Exposed",
+        "file": "target-repo/server.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "ctf.key::A02:2021-Cryptographic Failures::hardcoded ctf key in source control",
+        "title": "Hardcoded CTF Key in Source Control",
+        "file": "ctf.key",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/login.ts::A07:2021-Identification and Authentication Failures::hardcoded default credentials in application logic",
+        "title": "Hardcoded Default Credentials in Application Logic",
+        "file": "target-repo/routes/login.ts",
+        "category": "A07:2021-Identification and Authentication Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/lib/insecurity.ts::A02:2021-Cryptographic Failures::hardcoded hmac secret key in source code",
+        "title": "Hardcoded HMAC Secret Key in Source Code",
+        "file": "target-repo/lib/insecurity.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/lib/insecurity.ts::A02:2021-Cryptographic Failures::hardcoded hmac secret for password verification",
+        "title": "Hardcoded HMAC Secret for Password Verification",
+        "file": "target-repo/lib/insecurity.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/continueCode.ts::A02:2021-Cryptographic Failures::hardcoded hashids salts expose id encoding",
+        "title": "Hardcoded Hashids Salts Expose ID Encoding",
+        "file": "routes/continueCode.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "lib/insecurity.ts::A02:2021-Cryptographic Failures::hardcoded rsa private key",
+        "title": "Hardcoded RSA Private Key",
+        "file": "lib/insecurity.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/lib/insecurity.ts::A02:2021-Cryptographic Failures::hardcoded rsa private key used for jwt signing",
+        "title": "Hardcoded RSA Private Key Used for JWT Signing",
+        "file": "target-repo/lib/insecurity.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/lib/insecurity.ts::A02:2021-Cryptographic Failures::hardcoded rsa private key used to sign jwts",
+        "title": "Hardcoded RSA Private Key Used to Sign JWTs",
+        "file": "target-repo/lib/insecurity.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "lib/insecurity.ts::A02:2021-Cryptographic Failures::hardcoded rsa private key for jwt signing",
+        "title": "Hardcoded RSA Private Key for JWT Signing",
+        "file": "lib/insecurity.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "lib/insecurity.ts::A04:2021-Insecure Design::hardcoded rsa private key for jwt signing",
+        "title": "Hardcoded RSA Private Key for JWT Signing",
+        "file": "lib/insecurity.ts",
+        "category": "A04:2021-Insecure Design",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/lib/insecurity.ts::A02:2021-Cryptographic Failures::hardcoded rsa private key in source code",
+        "title": "Hardcoded RSA Private Key in Source Code",
+        "file": "target-repo/lib/insecurity.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/login.ts::A07:2021-Identification and Authentication Failures::hardcoded test credentials in source code",
+        "title": "Hardcoded Test Credentials in Source Code",
+        "file": "routes/login.ts",
+        "category": "A07:2021-Identification and Authentication Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/server.ts::A05:2021-Security Misconfiguration::hardcoded weak cookie parser secret",
+        "title": "Hardcoded Weak Cookie Parser Secret",
+        "file": "target-repo/server.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/basketItems.ts::A01:2021-Broken Access Control::idor in basket item access",
+        "title": "IDOR in Basket Item Access",
+        "file": "routes/basketItems.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "routes/basketItems.ts::A01:2021-Broken Access Control::idor in basket item operations",
+        "title": "IDOR in Basket Item Operations",
+        "file": "routes/basketItems.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "target-repo/routes/payment.ts::A01:2021-Broken Access Control::idor on payment methods via user-supplied userid",
+        "title": "IDOR on Payment Methods via User-Supplied UserId",
+        "file": "target-repo/routes/payment.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "target-repo/routes/deluxe.ts::A01:2021-Broken Access Control::idor: deluxe upgrade performs operations on caller-supplied userid",
+        "title": "IDOR: Deluxe Upgrade Performs Operations on Caller-Supplied UserId",
+        "file": "target-repo/routes/deluxe.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/memory.ts::A01:2021-Broken Access Control::idor: userid accepted from request body in memory creation",
+        "title": "IDOR: UserId Accepted from Request Body in Memory Creation",
+        "file": "target-repo/routes/memory.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/wallet.ts::A01:2021-Broken Access Control::idor: wallet balance manipulation without ownership check",
+        "title": "IDOR: Wallet Balance Manipulation Without Ownership Check",
+        "file": "routes/wallet.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/server.ts::A01:2021-Broken Access Control::ip spoofing via x-forwarded-for in rate limiting",
+        "title": "IP Spoofing via X-Forwarded-For in Rate Limiting",
+        "file": "target-repo/server.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/deluxe.ts::A05:2021-Security Misconfiguration::information disclosure via verbose error messages",
+        "title": "Information Disclosure via Verbose Error Messages",
+        "file": "routes/deluxe.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/b2bOrder.ts::A08:2021-Software and Data Integrity Failures::insecure deserialization in b2b order processing",
+        "title": "Insecure Deserialization in B2B Order Processing",
+        "file": "routes/b2bOrder.ts",
+        "category": "A08:2021-Software and Data Integrity Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "target-repo/routes/basket.ts::A01:2021-Broken Access Control::insecure direct object reference on basket access",
+        "title": "Insecure Direct Object Reference on Basket Access",
+        "file": "target-repo/routes/basket.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/resetPassword.ts::A07:2021-Identification and Authentication Failures::insecure password reset via security questions",
+        "title": "Insecure Password Reset via Security Questions",
+        "file": "routes/resetPassword.ts",
+        "category": "A07:2021-Identification and Authentication Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/fileUpload.ts::A04:2021-Insecure Design::insecure temporary file handling in upload processing",
+        "title": "Insecure Temporary File Handling in Upload Processing",
+        "file": "routes/fileUpload.ts",
+        "category": "A04:2021-Insecure Design",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "low"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "low"
+        ]
+      },
+      {
+        "key": "target-repo/routes/search.ts::A03:2021-Injection::insufficient input length check does not prevent sql injection",
+        "title": "Insufficient Input Length Check Does Not Prevent SQL Injection",
+        "file": "target-repo/routes/search.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/currentUser.ts::A03:2021-Injection::jsonp callback injection in currentuser route",
+        "title": "JSONP Callback Injection in currentUser Route",
+        "file": "routes/currentUser.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "target-repo/routes/verify.ts::A02:2021-Cryptographic Failures::jwt 'none' algorithm accepted",
+        "title": "JWT 'none' Algorithm Accepted",
+        "file": "target-repo/routes/verify.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/verify.ts::A07:2021-Identification and Authentication Failures::jwt algorithm confusion / none algorithm accepted",
+        "title": "JWT Algorithm Confusion / None Algorithm Accepted",
+        "file": "routes/verify.ts",
+        "category": "A07:2021-Identification and Authentication Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "lib/insecurity.ts::A07:2021-Identification and Authentication Failures::jwt none algorithm vulnerability",
+        "title": "JWT None Algorithm Vulnerability",
+        "file": "lib/insecurity.ts",
+        "category": "A07:2021-Identification and Authentication Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/captcha.ts::A03:2021-Injection::javascript injection via eval() in captcha generation",
+        "title": "JavaScript Injection via eval() in CAPTCHA Generation",
+        "file": "target-repo/routes/captcha.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "target-repo/routes/dataErasure.ts::A03:2021-Injection::local file inclusion via template layout parameter",
+        "title": "Local File Inclusion via Template Layout Parameter",
+        "file": "target-repo/routes/dataErasure.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "routes/dataErasure.ts::A02:2021-Cryptographic Failures::local file inclusion via template layout parameter",
+        "title": "Local File Inclusion via Template Layout Parameter",
+        "file": "routes/dataErasure.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "server.ts::A05:2021-Security Misconfiguration::log directory browsable via /support/logs",
+        "title": "Log Directory Browsable via /support/logs",
+        "file": "server.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/orderHistory.ts::A07:2021-Identification and Authentication Failures::missing authentication on all-orders endpoint",
+        "title": "Missing Authentication on All-Orders Endpoint",
+        "file": "routes/orderHistory.ts",
+        "category": "A07:2021-Identification and Authentication Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/updateUserProfile.ts::A01:2021-Broken Access Control::missing csrf protection on profile update",
+        "title": "Missing CSRF Protection on Profile Update",
+        "file": "routes/updateUserProfile.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "routes/updateUserProfile.ts::A07:2021-Identification and Authentication Failures::missing csrf protection on state-changing endpoints",
+        "title": "Missing CSRF Protection on State-Changing Endpoints",
+        "file": "routes/updateUserProfile.ts",
+        "category": "A07:2021-Identification and Authentication Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "server.ts::A05:2021-Security Misconfiguration::missing hsts header",
+        "title": "Missing HSTS Header",
+        "file": "server.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "low"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "server.ts::A05:2021-Security Misconfiguration::missing http security headers",
+        "title": "Missing HTTP Security Headers",
+        "file": "server.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "server.ts::A05:2021-Security Misconfiguration::missing security headers (incomplete helmet configuration)",
+        "title": "Missing Security Headers (Incomplete Helmet Configuration)",
+        "file": "server.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/server.ts::A07:2021-Identification and Authentication Failures::no csrf protection on state-changing endpoints",
+        "title": "No CSRF Protection on State-Changing Endpoints",
+        "file": "target-repo/server.ts",
+        "category": "A07:2021-Identification and Authentication Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "routes/updateUserProfile.ts::A04:2021-Insecure Design::no csrf token protection on state-changing requests",
+        "title": "No CSRF Token Protection on State-Changing Requests",
+        "file": "routes/updateUserProfile.ts",
+        "category": "A04:2021-Insecure Design",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "routes/updateUserProfile.ts::A07:2021-Identification and Authentication Failures::no csrf tokens on state-changing endpoints",
+        "title": "No CSRF Tokens on State-Changing Endpoints",
+        "file": "routes/updateUserProfile.ts",
+        "category": "A07:2021-Identification and Authentication Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/resetPassword.ts::A07:2021-Identification and Authentication Failures::no password complexity requirements",
+        "title": "No Password Complexity Requirements",
+        "file": "routes/resetPassword.ts",
+        "category": "A07:2021-Identification and Authentication Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "low"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/login.ts::A07:2021-Identification and Authentication Failures::no rate limiting on authentication endpoints",
+        "title": "No Rate Limiting on Authentication Endpoints",
+        "file": "routes/login.ts",
+        "category": "A07:2021-Identification and Authentication Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "target-repo/routes/updateProductReviews.ts::A03:2021-Injection::nosql injection allowing mass update of reviews",
+        "title": "NoSQL Injection Allowing Mass Update of Reviews",
+        "file": "target-repo/routes/updateProductReviews.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/trackOrder.ts::A03:2021-Injection::nosql injection in order tracking",
+        "title": "NoSQL Injection in Order Tracking",
+        "file": "routes/trackOrder.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/updateProductReviews.ts::A03:2021-Injection::nosql injection in review update allows unauthorized modification",
+        "title": "NoSQL Injection in Review Update Allows Unauthorized Modification",
+        "file": "routes/updateProductReviews.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/showProductReviews.ts::A03:2021-Injection::nosql injection via $where operator",
+        "title": "NoSQL Injection via $where Operator",
+        "file": "routes/showProductReviews.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/trackOrder.ts::A03:2021-Injection::nosql injection via $where in order tracking",
+        "title": "NoSQL Injection via $where in Order Tracking",
+        "file": "routes/trackOrder.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/trackOrder.ts::A03:2021-Injection::nosql injection via $where in track order",
+        "title": "NoSQL Injection via $where in Track Order",
+        "file": "routes/trackOrder.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/trackOrder.ts::A03:2021-Injection::nosql injection via mongodb $where in order tracking",
+        "title": "NoSQL Injection via MongoDB $where in Order Tracking",
+        "file": "routes/trackOrder.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/showProductReviews.ts::A03:2021-Injection::nosql injection via mongodb $where in product reviews",
+        "title": "NoSQL Injection via MongoDB $where in Product Reviews",
+        "file": "routes/showProductReviews.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/updateProductReviews.ts::A03:2021-Injection::nosql mass update injection in review update",
+        "title": "NoSQL Mass Update Injection in Review Update",
+        "file": "routes/updateProductReviews.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "lib/insecurity.ts::A01:2021-Broken Access Control::open redirect allowlist bypass in insecurity.ts",
+        "title": "Open Redirect Allowlist Bypass in insecurity.ts",
+        "file": "lib/insecurity.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/lib/insecurity.ts::A01:2021-Broken Access Control::open redirect via allowlist substring bypass",
+        "title": "Open Redirect via Allowlist Substring Bypass",
+        "file": "target-repo/lib/insecurity.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/redirect.ts::A01:2021-Broken Access Control::open redirect via substring allowlist check",
+        "title": "Open Redirect via Substring Allowlist Check",
+        "file": "routes/redirect.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "lib/insecurity.ts::A01:2021-Broken Access Control::open redirect via substring match bypass",
+        "title": "Open Redirect via Substring Match Bypass",
+        "file": "lib/insecurity.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "lib/insecurity.ts::A01:2021-Broken Access Control::open redirect via substring url matching",
+        "title": "Open Redirect via Substring URL Matching",
+        "file": "lib/insecurity.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "lib/insecurity.ts::A01:2021-Broken Access Control::open redirect via substring url validation",
+        "title": "Open Redirect via Substring URL Validation",
+        "file": "lib/insecurity.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "lib/insecurity.ts::A01:2021-Broken Access Control::open redirect via substring-matching allowlist",
+        "title": "Open Redirect via Substring-Matching Allowlist",
+        "file": "lib/insecurity.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/package.json::A06:2021-Vulnerable and Outdated Components::outdated express-jwt (0.1.3) with known vulnerabilities",
+        "title": "Outdated express-jwt (0.1.3) with Known Vulnerabilities",
+        "file": "target-repo/package.json",
+        "category": "A06:2021-Vulnerable and Outdated Components",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/package.json::A06:2021-Vulnerable and Outdated Components::outdated js-yaml (^3.14.0) used in file parsing",
+        "title": "Outdated js-yaml (^3.14.0) Used in File Parsing",
+        "file": "target-repo/package.json",
+        "category": "A06:2021-Vulnerable and Outdated Components",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "package.json::A06:2021-Vulnerable and Outdated Components::outdated jsonwebtoken (0.4.0) with algorithm confusion",
+        "title": "Outdated jsonwebtoken (0.4.0) with Algorithm Confusion",
+        "file": "package.json",
+        "category": "A06:2021-Vulnerable and Outdated Components",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "package.json::A06:2021-Vulnerable and Outdated Components::outdated sanitize-html (1.4.2) with xss bypass",
+        "title": "Outdated sanitize-html (1.4.2) with XSS Bypass",
+        "file": "package.json",
+        "category": "A06:2021-Vulnerable and Outdated Components",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/package.json::A06:2021-Vulnerable and Outdated Components::outdated sanitize-html (1.4.2) with xss bypass",
+        "title": "Outdated sanitize-html (1.4.2) with XSS Bypass",
+        "file": "target-repo/package.json",
+        "category": "A06:2021-Vulnerable and Outdated Components",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/package.json::A06:2021-Vulnerable and Outdated Components::outdated sanitize-html (v1.4.2) with bypass vulnerabilities",
+        "title": "Outdated sanitize-html (v1.4.2) with Bypass Vulnerabilities",
+        "file": "target-repo/package.json",
+        "category": "A06:2021-Vulnerable and Outdated Components",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "server.ts::A05:2021-Security Misconfiguration::overly permissive cors configuration",
+        "title": "Overly Permissive CORS Configuration",
+        "file": "server.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/server.ts::A05:2021-Security Misconfiguration::overly permissive cors policy",
+        "title": "Overly Permissive CORS Policy",
+        "file": "target-repo/server.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/changePassword.ts::A07:2021-Identification and Authentication Failures::password exposed in query string",
+        "title": "Password Exposed in Query String",
+        "file": "routes/changePassword.ts",
+        "category": "A07:2021-Identification and Authentication Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/currentUser.ts::A02:2021-Cryptographic Failures::password hash exposed via field selection in currentuser route",
+        "title": "Password Hash Exposed via Field Selection in currentUser Route",
+        "file": "routes/currentUser.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/lib/insecurity.ts::A02:2021-Cryptographic Failures::password hashing with md5 (no salt)",
+        "title": "Password Hashing with MD5 (No Salt)",
+        "file": "target-repo/lib/insecurity.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/lib/insecurity.ts::A07:2021-Identification and Authentication Failures::passwords hashed with md5 (no salt)",
+        "title": "Passwords Hashed with MD5 (No Salt)",
+        "file": "target-repo/lib/insecurity.ts",
+        "category": "A07:2021-Identification and Authentication Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/fileUpload.ts::A01:2021-Broken Access Control::path traversal / zip slip in file upload",
+        "title": "Path Traversal / Zip Slip in File Upload",
+        "file": "routes/fileUpload.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/fileUpload.ts::A03:2021-Injection::path traversal / zip slip in file upload extraction",
+        "title": "Path Traversal / Zip Slip in File Upload Extraction",
+        "file": "target-repo/routes/fileUpload.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "target-repo/routes/dataErasure.ts::A01:2021-Broken Access Control::path traversal in data erasure layout parameter",
+        "title": "Path Traversal in Data Erasure Layout Parameter",
+        "file": "target-repo/routes/dataErasure.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/keyServer.ts::A01:2021-Broken Access Control::path traversal in key server",
+        "title": "Path Traversal in Key Server",
+        "file": "routes/keyServer.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "routes/fileUpload.ts::A01:2021-Broken Access Control::path traversal in zip complaint upload",
+        "title": "Path Traversal in ZIP Complaint Upload",
+        "file": "routes/fileUpload.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/fileUpload.ts::A03:2021-Injection::path traversal in zip file extraction",
+        "title": "Path Traversal in Zip File Extraction",
+        "file": "routes/fileUpload.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/fileUpload.ts::A01:2021-Broken Access Control::path traversal in zip file extraction",
+        "title": "Path Traversal in Zip File Extraction",
+        "file": "target-repo/routes/fileUpload.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/fileUpload.ts::A01:2021-Broken Access Control::path traversal in zip file extraction",
+        "title": "Path Traversal in Zip File Extraction",
+        "file": "routes/fileUpload.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "routes/resetPassword.ts::A02:2021-Cryptographic Failures::plaintext password storage in reset flow",
+        "title": "Plaintext Password Storage in Reset Flow",
+        "file": "routes/resetPassword.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "routes/profileImageUrlUpload.ts::A10:2021-Server-Side Request Forgery::potential ssrf in profile image url upload",
+        "title": "Potential SSRF in Profile Image URL Upload",
+        "file": "routes/profileImageUrlUpload.ts",
+        "category": "A10:2021-Server-Side Request Forgery",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "low"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "low"
+        ]
+      },
+      {
+        "key": "encryptionkeys/::A02:2021-Cryptographic Failures::private encryption keys stored in repository",
+        "title": "Private Encryption Keys Stored in Repository",
+        "file": "encryptionkeys/",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/server.ts::A05:2021-Security Misconfiguration::prometheus metrics endpoint exposed without auth",
+        "title": "Prometheus Metrics Endpoint Exposed Without Auth",
+        "file": "target-repo/server.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "server.ts::A05:2021-Security Misconfiguration::prometheus metrics endpoint exposed without authentication",
+        "title": "Prometheus Metrics Endpoint Exposed Without Authentication",
+        "file": "server.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/metrics.ts::A05:2021-Security Misconfiguration::prometheus metrics endpoint publicly accessible",
+        "title": "Prometheus Metrics Endpoint Publicly Accessible",
+        "file": "routes/metrics.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "target-repo/routes/b2bOrder.ts::A03:2021-Injection::rce via vm.runincontext with notevil safeeval",
+        "title": "RCE via vm.runInContext with notevil safeEval",
+        "file": "target-repo/routes/b2bOrder.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "server.ts::A07:2021-Identification and Authentication Failures::rate limit bypass via x-forwarded-for spoofing",
+        "title": "Rate Limit Bypass via X-Forwarded-For Spoofing",
+        "file": "server.ts",
+        "category": "A07:2021-Identification and Authentication Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "server.ts::A07:2021-Identification and Authentication Failures::rate limiting bypass via spoofable x-forwarded-for",
+        "title": "Rate Limiting Bypass via Spoofable X-Forwarded-For",
+        "file": "server.ts",
+        "category": "A07:2021-Identification and Authentication Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "server.ts::A07:2021-Identification and Authentication Failures::rate limiting bypass via spoofed x-forwarded-for header",
+        "title": "Rate Limiting Bypass via Spoofed X-Forwarded-For Header",
+        "file": "server.ts",
+        "category": "A07:2021-Identification and Authentication Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/server.ts::A05:2021-Security Misconfiguration::rate limiting on password reset bypassable via header casing",
+        "title": "Rate Limiting on Password Reset Bypassable via Header Casing",
+        "file": "target-repo/server.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "target-repo/routes/trackOrder.ts::A03:2021-Injection::reflected xss via order id parameter",
+        "title": "Reflected XSS via Order ID Parameter",
+        "file": "target-repo/routes/trackOrder.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/frontend/src/app/search-result/search-result.component.ts::A03:2021-Injection::reflected xss via bypasssecuritytrusthtml on search query parameter",
+        "title": "Reflected XSS via bypassSecurityTrustHtml on Search Query Parameter",
+        "file": "target-repo/frontend/src/app/search-result/search-result.component.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/userProfile.ts::A03:2021-Injection::remote code execution via eval() on user input",
+        "title": "Remote Code Execution via eval() on User Input",
+        "file": "routes/userProfile.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/login.ts::A03:2021-Injection::sql injection authentication bypass in login",
+        "title": "SQL Injection Authentication Bypass in Login",
+        "file": "routes/login.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/login.ts::A03:2021-Injection::sql injection in login",
+        "title": "SQL Injection in Login",
+        "file": "routes/login.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/login.ts::A03:2021-Injection::sql injection in login authentication",
+        "title": "SQL Injection in Login Authentication",
+        "file": "routes/login.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/login.ts::A03:2021-Injection::sql injection in login via string concatenation",
+        "title": "SQL Injection in Login via String Concatenation",
+        "file": "target-repo/routes/login.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/search.ts::A03:2021-Injection::sql injection in product search via string concatenation",
+        "title": "SQL Injection in Product Search via String Concatenation",
+        "file": "target-repo/routes/search.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/profileImageUrlUpload.ts::A10:2021-Server-Side Request Forgery::ssrf in profile image url upload",
+        "title": "SSRF in Profile Image URL Upload",
+        "file": "routes/profileImageUrlUpload.ts",
+        "category": "A10:2021-Server-Side Request Forgery",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/profileImageUrlUpload.ts::A01:2021-Broken Access Control::ssrf via user-controlled profile image url",
+        "title": "SSRF via User-Controlled Profile Image URL",
+        "file": "target-repo/routes/profileImageUrlUpload.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/profileImageUrlUpload.ts::A10:2021-Server-Side Request Forgery::ssrf via user-controlled profile image url",
+        "title": "SSRF via User-Controlled Profile Image URL",
+        "file": "routes/profileImageUrlUpload.ts",
+        "category": "A10:2021-Server-Side Request Forgery",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/server.ts::A02:2021-Cryptographic Failures::sensitive data transmitted without transport security enforcement",
+        "title": "Sensitive Data Transmitted Without Transport Security Enforcement",
+        "file": "target-repo/server.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "info"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "routes/fileUpload.ts::A09:2021-Security Logging and Monitoring Failures::sensitive file content reflected in error messages",
+        "title": "Sensitive File Content Reflected in Error Messages",
+        "file": "routes/fileUpload.ts",
+        "category": "A09:2021-Security Logging and Monitoring Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "server.ts::A02:2021-Cryptographic Failures::sensitive log files publicly accessible",
+        "title": "Sensitive Log Files Publicly Accessible",
+        "file": "server.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/userProfile.ts::A03:2021-Injection::server-side code injection via eval() in user profile (ssti)",
+        "title": "Server-Side Code Injection via eval() in User Profile (SSTI)",
+        "file": "target-repo/routes/userProfile.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/userProfile.ts::A03:2021-Injection::server-side template injection / code injection via eval()",
+        "title": "Server-Side Template Injection / Code Injection via eval()",
+        "file": "routes/userProfile.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/userProfile.ts::A03:2021-Injection::server-side template injection via pug",
+        "title": "Server-Side Template Injection via Pug",
+        "file": "routes/userProfile.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/userProfile.ts::A03:2021-Injection::server-side template injection via pug",
+        "title": "Server-Side Template Injection via Pug",
+        "file": "target-repo/routes/userProfile.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/userProfile.ts::A03:2021-Injection::server-side template injection via eval() in username",
+        "title": "Server-Side Template Injection via eval() in Username",
+        "file": "routes/userProfile.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/lib/insecurity.ts::A02:2021-Cryptographic Failures::session token cookie missing httponly, secure, and samesite flags",
+        "title": "Session Token Cookie Missing httpOnly, Secure, and SameSite Flags",
+        "file": "target-repo/lib/insecurity.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "package.json::A06:2021-Vulnerable and Outdated Components::severely outdated express-jwt (0.1.3)",
+        "title": "Severely Outdated express-jwt (0.1.3)",
+        "file": "package.json",
+        "category": "A06:2021-Vulnerable and Outdated Components",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "package.json::A06:2021-Vulnerable and Outdated Components::severely outdated express-jwt library (v0.1.3)",
+        "title": "Severely Outdated express-jwt Library (v0.1.3)",
+        "file": "package.json",
+        "category": "A06:2021-Vulnerable and Outdated Components",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/createProductReviews.ts::A03:2021-Injection::stored xss in product reviews",
+        "title": "Stored XSS in Product Reviews",
+        "file": "routes/createProductReviews.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/models/user.ts::A03:2021-Injection::stored xss via insufficient html sanitization in username",
+        "title": "Stored XSS via Insufficient HTML Sanitization in Username",
+        "file": "target-repo/models/user.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/frontend/src/app/search-result/search-result.component.ts::A03:2021-Injection::stored xss via bypasssecuritytrusthtml on product descriptions",
+        "title": "Stored XSS via bypassSecurityTrustHtml on Product Descriptions",
+        "file": "target-repo/frontend/src/app/search-result/search-result.component.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "server.ts::A05:2021-Security Misconfiguration::support logs directory with directory listing",
+        "title": "Support Logs Directory with Directory Listing",
+        "file": "server.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/likeProductReviews.ts::A04:2021-Insecure Design::timing side-channel in product review like endpoint",
+        "title": "Timing Side-Channel in Product Review Like Endpoint",
+        "file": "target-repo/routes/likeProductReviews.ts",
+        "category": "A04:2021-Insecure Design",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "low"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/showProductReviews.ts::A01:2021-Broken Access Control::unauthenticated access to product review queries",
+        "title": "Unauthenticated Access to Product Review Queries",
+        "file": "routes/showProductReviews.ts",
+        "category": "A01:2021-Broken Access Control",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "target-repo/routes/b2bOrder.ts::A08:2021-Software and Data Integrity Failures::unsafe deserialization / rce risk in b2b order processing",
+        "title": "Unsafe Deserialization / RCE Risk in B2B Order Processing",
+        "file": "target-repo/routes/b2bOrder.ts",
+        "category": "A08:2021-Software and Data Integrity Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "routes/fileUpload.ts::A08:2021-Software and Data Integrity Failures::unsafe yaml deserialization leading to rce",
+        "title": "Unsafe YAML Deserialization Leading to RCE",
+        "file": "routes/fileUpload.ts",
+        "category": "A08:2021-Software and Data Integrity Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/fileUpload.ts::A08:2021-Software and Data Integrity Failures::unsafe yaml deserialization in file upload",
+        "title": "Unsafe YAML Deserialization in File Upload",
+        "file": "target-repo/routes/fileUpload.ts",
+        "category": "A08:2021-Software and Data Integrity Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/captcha.ts::A03:2021-Injection::unsafe eval() in captcha generation",
+        "title": "Unsafe eval() in CAPTCHA Generation",
+        "file": "routes/captcha.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "routes/userProfile.ts::A05:2021-Security Misconfiguration::unsafe-eval in content security policy",
+        "title": "Unsafe-eval in Content Security Policy",
+        "file": "routes/userProfile.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/currentUser.ts::A07:2021-Identification and Authentication Failures::unsanitized jsonp callback parameter",
+        "title": "Unsanitized JSONP Callback Parameter",
+        "file": "routes/currentUser.ts",
+        "category": "A07:2021-Identification and Authentication Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "routes/captcha.ts::A03:2021-Injection::use of eval() for captcha calculation",
+        "title": "Use of eval() for CAPTCHA Calculation",
+        "file": "routes/captcha.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "routes/resetPassword.ts::A02:2021-Cryptographic Failures::user enumeration via password reset error messages",
+        "title": "User Enumeration via Password Reset Error Messages",
+        "file": "routes/resetPassword.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "low"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/login.ts::A07:2021-Identification and Authentication Failures::user enumeration via timing differences",
+        "title": "User Enumeration via Timing Differences",
+        "file": "routes/login.ts",
+        "category": "A07:2021-Identification and Authentication Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "low"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "low"
+        ]
+      },
+      {
+        "key": "routes/userProfile.ts::A05:2021-Security Misconfiguration::weak csp allowing unsafe-eval",
+        "title": "Weak CSP Allowing unsafe-eval",
+        "file": "routes/userProfile.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/server.ts::A07:2021-Identification and Authentication Failures::weak cookie parser secret",
+        "title": "Weak Cookie Parser Secret",
+        "file": "target-repo/server.ts",
+        "category": "A07:2021-Identification and Authentication Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "server.ts::A02:2021-Cryptographic Failures::weak cookie signing secret",
+        "title": "Weak Cookie Signing Secret",
+        "file": "server.ts",
+        "category": "A02:2021-Cryptographic Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/server.ts::A05:2021-Security Misconfiguration::wildcard cors allows any origin",
+        "title": "Wildcard CORS Allows Any Origin",
+        "file": "target-repo/server.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "server.ts::A05:2021-Security Misconfiguration::wildcard cors policy",
+        "title": "Wildcard CORS Policy",
+        "file": "server.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "server.ts::A05:2021-Security Misconfiguration::wildcard cors policy allows all origins",
+        "title": "Wildcard CORS Policy Allows All Origins",
+        "file": "server.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "server.ts::A05:2021-Security Misconfiguration::x-xss-protection / helmet xss filter explicitly disabled",
+        "title": "X-XSS-Protection / Helmet XSS Filter Explicitly Disabled",
+        "file": "server.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/server.ts::A05:2021-Security Misconfiguration::x-xss-protection header explicitly disabled",
+        "title": "X-XSS-Protection Header Explicitly Disabled",
+        "file": "target-repo/server.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "low"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/fileUpload.ts::A09:2021-Security Logging and Monitoring Failures::xml content exposed in error messages",
+        "title": "XML Content Exposed in Error Messages",
+        "file": "target-repo/routes/fileUpload.ts",
+        "category": "A09:2021-Security Logging and Monitoring Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "low"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "target-repo/routes/fileUpload.ts::A03:2021-Injection::xml external entity (xxe) injection in file upload",
+        "title": "XML External Entity (XXE) Injection in File Upload",
+        "file": "target-repo/routes/fileUpload.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "server.ts::A05:2021-Security Misconfiguration::xss protection header disabled",
+        "title": "XSS Protection Header Disabled",
+        "file": "server.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/server.ts::A05:2021-Security Misconfiguration::xss protection header explicitly disabled",
+        "title": "XSS Protection Header Explicitly Disabled",
+        "file": "target-repo/server.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/fileUpload.ts::A05:2021-Security Misconfiguration::xxe via external entity processing in xml upload",
+        "title": "XXE via External Entity Processing in XML Upload",
+        "file": "target-repo/routes/fileUpload.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/fileUpload.ts::A05:2021-Security Misconfiguration::xxe via unsafe xml parser configuration",
+        "title": "XXE via Unsafe XML Parser Configuration",
+        "file": "routes/fileUpload.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/fileUpload.ts::A08:2021-Software and Data Integrity Failures::xxe via unsafe xml parsing with noent:true",
+        "title": "XXE via Unsafe XML Parsing with noent:true",
+        "file": "routes/fileUpload.ts",
+        "category": "A08:2021-Software and Data Integrity Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/fileUpload.ts::A04:2021-Insecure Design::xxe via unsafe xml parsing with noent:true",
+        "title": "XXE via Unsafe XML Parsing with noent:true",
+        "file": "routes/fileUpload.ts",
+        "category": "A04:2021-Insecure Design",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/fileUpload.ts::A03:2021-Injection::xxe via xml parsing with external entities enabled",
+        "title": "XXE via XML Parsing with External Entities Enabled",
+        "file": "target-repo/routes/fileUpload.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/fileUpload.ts::A03:2021-Injection::xxe via xml upload with noent:true",
+        "title": "XXE via XML Upload with noent:true",
+        "file": "routes/fileUpload.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "routes/fileUpload.ts::A08:2021-Software and Data Integrity Failures::xxe via libxml with noent:true in file upload",
+        "title": "XXE via libxml with noent:true in File Upload",
+        "file": "routes/fileUpload.ts",
+        "category": "A08:2021-Software and Data Integrity Failures",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/fileUpload.ts::A03:2021-Injection::yaml bomb / denial of service via yaml parsing",
+        "title": "YAML Bomb / Denial of Service via YAML Parsing",
+        "file": "target-repo/routes/fileUpload.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/fileUpload.ts::A05:2021-Security Misconfiguration::yaml parsing without billion-laughs / entity expansion protection",
+        "title": "YAML Parsing Without Billion-Laughs / Entity Expansion Protection",
+        "file": "target-repo/routes/fileUpload.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "routes/captcha.ts::A03:2021-Injection::eval() used in captcha expression evaluation",
+        "title": "eval() Used in Captcha Expression Evaluation",
+        "file": "routes/captcha.ts",
+        "category": "A03:2021-Injection",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "medium"
+        ]
+      },
+      {
+        "key": "package.json::A06:2021-Vulnerable and Outdated Components::express-jwt v0.1.3 (ancient, multiple cves)",
+        "title": "express-jwt v0.1.3 (Ancient, Multiple CVEs)",
+        "file": "package.json",
+        "category": "A06:2021-Vulnerable and Outdated Components",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "package.json::A06:2021-Vulnerable and Outdated Components::js-yaml v3.x with unsafe load vulnerabilities",
+        "title": "js-yaml v3.x with Unsafe Load Vulnerabilities",
+        "file": "package.json",
+        "category": "A06:2021-Vulnerable and Outdated Components",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "package.json::A06:2021-Vulnerable and Outdated Components::jsonwebtoken v0.4.0 (2013, eol) with critical cves",
+        "title": "jsonwebtoken v0.4.0 (2013, EOL) with Critical CVEs",
+        "file": "package.json",
+        "category": "A06:2021-Vulnerable and Outdated Components",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "critical"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "package.json::A06:2021-Vulnerable and Outdated Components::libxmljs2 v0.37.x with xxe vulnerabilities",
+        "title": "libxmljs2 v0.37.x with XXE Vulnerabilities",
+        "file": "package.json",
+        "category": "A06:2021-Vulnerable and Outdated Components",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "package.json::A06:2021-Vulnerable and Outdated Components::sanitize-html v1.4.2 with xss bypass vulnerabilities",
+        "title": "sanitize-html v1.4.2 with XSS Bypass Vulnerabilities",
+        "file": "package.json",
+        "category": "A06:2021-Vulnerable and Outdated Components",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "high"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      },
+      {
+        "key": "target-repo/routes/userProfile.ts::A05:2021-Security Misconfiguration::unsafe-eval in content-security-policy",
+        "title": "unsafe-eval in Content-Security-Policy",
+        "file": "target-repo/routes/userProfile.ts",
+        "category": "A05:2021-Security Misconfiguration",
+        "appearances": 1,
+        "appearance_rate": "1/8",
+        "severities_seen": [
+          "medium"
+        ],
+        "severity_drift": false,
+        "confidences_seen": [
+          "high"
+        ]
+      }
+    ]
+  },
+  "per_run_stats": [
+    {
+      "run": "scan_run_1_20260501_192053.json",
+      "total_findings": 32,
+      "by_severity": {
+        "critical": 8,
+        "high": 17,
+        "medium": 7
+      },
+      "by_category": {
+        "A03:2021-Injection": 9,
+        "A02:2021-Cryptographic Failures": 5,
+        "A07:2021-Identification and Authentication Failures": 3,
+        "A01:2021-Broken Access Control": 6,
+        "A08:2021-Software and Data Integrity Failures": 1,
+        "A05:2021-Security Misconfiguration": 3,
+        "A06:2021-Vulnerable and Outdated Components": 5
+      }
+    },
+    {
+      "run": "scan_run_2_20260501_192528.json",
+      "total_findings": 38,
+      "by_severity": {
+        "critical": 11,
+        "high": 14,
+        "medium": 10,
+        "low": 3
+      },
+      "by_category": {
+        "A03:2021-Injection": 7,
+        "A08:2021-Software and Data Integrity Failures": 2,
+        "A01:2021-Broken Access Control": 6,
+        "A05:2021-Security Misconfiguration": 6,
+        "A02:2021-Cryptographic Failures": 5,
+        "A06:2021-Vulnerable and Outdated Components": 3,
+        "A10:2021-Server-Side Request Forgery": 1,
+        "A07:2021-Identification and Authentication Failures": 6,
+        "A04:2021-Insecure Design": 2
+      }
+    },
+    {
+      "run": "scan_run_3_20260501_192942.json",
+      "total_findings": 35,
+      "by_severity": {
+        "critical": 10,
+        "high": 15,
+        "medium": 8,
+        "low": 1,
+        "info": 1
+      },
+      "by_category": {
+        "A03:2021-Injection": 12,
+        "A02:2021-Cryptographic Failures": 6,
+        "A07:2021-Identification and Authentication Failures": 3,
+        "A01:2021-Broken Access Control": 5,
+        "A05:2021-Security Misconfiguration": 5,
+        "A06:2021-Vulnerable and Outdated Components": 3,
+        "A04:2021-Insecure Design": 1
+      }
+    },
+    {
+      "run": "scan_run_4_20260501_193341.json",
+      "total_findings": 28,
+      "by_severity": {
+        "critical": 7,
+        "high": 11,
+        "medium": 8,
+        "low": 2
+      },
+      "by_category": {
+        "A03:2021-Injection": 10,
+        "A02:2021-Cryptographic Failures": 4,
+        "A06:2021-Vulnerable and Outdated Components": 4,
+        "A01:2021-Broken Access Control": 3,
+        "A08:2021-Software and Data Integrity Failures": 1,
+        "A05:2021-Security Misconfiguration": 5,
+        "A09:2021-Security Logging and Monitoring Failures": 1
+      }
+    },
+    {
+      "run": "scan_run_5_20260501_193732.json",
+      "total_findings": 25,
+      "by_severity": {
+        "critical": 9,
+        "high": 11,
+        "medium": 5
+      },
+      "by_category": {
+        "A03:2021-Injection": 6,
+        "A04:2021-Insecure Design": 1,
+        "A08:2021-Software and Data Integrity Failures": 1,
+        "A10:2021-Server-Side Request Forgery": 1,
+        "A01:2021-Broken Access Control": 4,
+        "A07:2021-Identification and Authentication Failures": 3,
+        "A02:2021-Cryptographic Failures": 5,
+        "A06:2021-Vulnerable and Outdated Components": 3,
+        "A09:2021-Security Logging and Monitoring Failures": 1
+      }
+    },
+    {
+      "run": "scan_run_6_20260501_194027.json",
+      "total_findings": 32,
+      "by_severity": {
+        "critical": 7,
+        "high": 11,
+        "medium": 11,
+        "low": 3
+      },
+      "by_category": {
+        "A03:2021-Injection": 7,
+        "A08:2021-Software and Data Integrity Failures": 3,
+        "A02:2021-Cryptographic Failures": 6,
+        "A07:2021-Identification and Authentication Failures": 3,
+        "A05:2021-Security Misconfiguration": 6,
+        "A01:2021-Broken Access Control": 4,
+        "A06:2021-Vulnerable and Outdated Components": 2,
+        "A10:2021-Server-Side Request Forgery": 1
+      }
+    },
+    {
+      "run": "scan_run_7_20260501_194343.json",
+      "total_findings": 18,
+      "by_severity": {
+        "critical": 6,
+        "high": 9,
+        "medium": 3
+      },
+      "by_category": {
+        "A03:2021-Injection": 7,
+        "A02:2021-Cryptographic Failures": 1,
+        "A07:2021-Identification and Authentication Failures": 1,
+        "A05:2021-Security Misconfiguration": 3,
+        "A08:2021-Software and Data Integrity Failures": 1,
+        "A01:2021-Broken Access Control": 4,
+        "A06:2021-Vulnerable and Outdated Components": 1
+      }
+    },
+    {
+      "run": "scan_run_9_20260501_194957.json",
+      "total_findings": 25,
+      "by_severity": {
+        "critical": 7,
+        "high": 10,
+        "medium": 8
+      },
+      "by_category": {
+        "A03:2021-Injection": 8,
+        "A04:2021-Insecure Design": 1,
+        "A02:2021-Cryptographic Failures": 3,
+        "A05:2021-Security Misconfiguration": 5,
+        "A01:2021-Broken Access Control": 5,
+        "A06:2021-Vulnerable and Outdated Components": 2,
+        "A07:2021-Identification and Authentication Failures": 1
+      }
+    }
+  ]
+}
