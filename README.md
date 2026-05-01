@@ -2,7 +2,7 @@
 
 Anthropic launched Claude Security on April 30, 2026. I ran it 10 times on the same codebase to measure consistency. The results: 204 unique findings across 8 valid runs, zero findings in every run, and 90.7% of all findings appeared exactly once.
 
-Full writeup: https://open.substack.com/pub/aiusto571162/p/claude-security-vs-owasp-juice-shop?r=6sd6r2&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true
+Full writeup: https://open.substack.com/pub/noxdev888/p/claude-security-vs-owasp-juice-shop?r=6sd6r2&utm_campaign=post-expanded-share&utm_medium=web
 
 ## What this repo contains
 
@@ -54,7 +54,7 @@ Each scan used an identical prompt requesting structured JSON output with OWASP 
 
 There is a known path normalization artifact: Claude inconsistently prefixed file paths with `target-repo/` across runs. The analysis script treats these as separate findings, inflating the unique count. After manual normalization the true unique count is closer to 150-170, but the core finding (zero 100% detection rate) holds.
 
-See the [Substack article](https://open.substack.com/pub/aiusto571162/p/claude-security-vs-owasp-juice-shop?r=6sd6r2&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) for full methodology, ground truth cross-reference against known Juice Shop vulnerabilities, limitations, and next steps.
+See the [Substack article](https://open.substack.com/pub/noxdev888/p/claude-security-vs-owasp-juice-shop?r=6sd6r2&utm_campaign=post-expanded-share&utm_medium=web) for full methodology, ground truth cross-reference against known Juice Shop vulnerabilities, limitations, and next steps.
 
 ## License
 
